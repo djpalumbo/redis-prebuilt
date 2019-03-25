@@ -28,8 +28,8 @@ describe('run-command', () => {
 	});
 
 	it('executes the redis command', async () => {
-		await runCommand('redis-command', ['args1', 'args2']);
+		await runCommand('redis-command', ['args1', 'args2'], { opt: true });
 
-		expect(execa).toHaveBeenCalledWith('/a/home/dir/.redis-prebuilt/redis-x.y.z/src/redis-command', ['args1', 'args2'], expect.anything({ stdio: 'inherit' }));
+		expect(execa).toHaveBeenCalledWith('/a/home/dir/.redis-prebuilt/redis-x.y.z/src/redis-command', ['args1', 'args2'], expect.anything({ opt: true }));
 	});
 });
