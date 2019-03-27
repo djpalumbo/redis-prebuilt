@@ -14,6 +14,7 @@
   "files": [
     "lib"
   ],
+  "main": "lib/redis-server-helper.js",
   "bin": {
     "redis-benchmark": "./lib/redis-benchmark.js",
     "redis-check-aof": "./lib/redis-check-aof.js",
