@@ -41,6 +41,28 @@ export REDIS_DOWNLOADDIR='./' REDIS_VERSION=5.0.3
 redis --port 400
 ```
 
+## Programmatic use
+
+```javascript
+const { RedisServerHelper } = require('redis-prebuilt');
+
+let redisServerHelper = new RedisServerHelper();
+
+// Optionally supply redis-server with args, set download directory and verion
+redisServerHelper = new RedisServerHelper(['--port', 6379], {
+  downloadDir: 'path/to/dir',
+  version: 'x.y.z'
+});
+
+redisServerHelper.run()
+  .then(() => {
+    console.log('redis-server is running');
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+```
+
 # Inspiration
 
 This is a Redis version of [https://github.com/winfinit/mongodb-prebuilt](https://github.com/winfinit/mongodb-prebuilt)
