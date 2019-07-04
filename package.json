@@ -39,22 +39,17 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "commander": "2.20.0",
-    "execa": "1.0.0",
-    "fs-extra": "7.0.1",
-    "redis-download": "1.0.3",
-    "request": "2.88.0",
-    "request-promise-native": "1.0.7",
-    "tar": "4.4.8"
+    "execa": "2.0.2",
+    "redis-download": "1.0.10"
   },
   "devDependencies": {
-    "@babel/cli": "7.4.3",
-    "@babel/core": "7.4.3",
-    "@babel/preset-env": "7.4.3",
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
     "cz-conventional-changelog": "2.1.0",
-    "eslint-config-saiichihashimoto": "1.2.14",
-    "husky": "2.1.0",
+    "eslint-config-saiichihashimoto": "1.2.38",
+    "husky": "3.0.0",
     "jest": "24.1.0",
-    "lint-my-app": "3.3.23"
+    "lint-my-app": "3.3.38"
   }
 }
